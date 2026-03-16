@@ -30,7 +30,7 @@ class User extends Authenticatable
     }
 
     public function departement(){
-        return $this->belongsTo(departement::class);
+        return $this->belongsTo(Departement::class);
     }
 
     public function notifications(){
