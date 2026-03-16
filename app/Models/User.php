@@ -25,28 +25,28 @@ class User extends Authenticatable
     ];
 
     // Relations
-    public function entreprise(): BelongsTo {
+    public function entreprise(){
         return $this->belongsTo(Entreprise::class);
     }
 
-    public function departement(): BelongsTo {
-        return $this->belongsTo(Departement::class);
+    public function departement(){
+        return $this->belongsTo(departement::class);
     }
 
-    public function notifications(): HasMany {
+    public function notifications(){
         return $this->hasMany(Notification::class);
     }
 
-    public function absences(): HasMany {
+    public function absences(){
         return $this->hasMany(Absence::class);
     }
 
-    public function plannings(): HasMany {
+    public function plannings(){
         return $this->hasMany(Planning::class);
     }
 
     // Tâches assignées à l'utilisateur
-    public function taches(): HasMany {
+    public function taches(){
         return $this->hasMany(Tache::class, 'user_id');
     }
 
