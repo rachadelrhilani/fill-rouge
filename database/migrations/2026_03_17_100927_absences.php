@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->date('date_debut');
             $table->date('date_fin');
-            $table->string('type'); // Maladie, Congé, RTT
-            $table->string('statut')->default('en_attente');
+            $table->enum('type', ['conge_paye', 'maladie', 'rtt', 'urgence_familiale'])->default('conge_paye');
+            $table->enum('statut', ['en_attente', 'approuve', 'refuse'])->default('en_attente');
             $table->text('motif')->nullable();
             $table->timestamp('date_demande');
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
