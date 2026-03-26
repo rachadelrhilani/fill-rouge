@@ -19,7 +19,7 @@ class AuthController extends Controller
     // inscription
     public function register(Request $request)
     {
-        // 1. Validation stricte (Sécurité Backend)
+        // Validation stricte (Sécurité Backend)
         $data = $request->validate([
             'name'     => 'required|string|max:255',
             'email'    => 'required|string|email|max:255|unique:users',
@@ -31,7 +31,7 @@ class AuthController extends Controller
             // creer entreprise avec user admin
             $user = $this->authService->register($data);
 
-            // Connexion automatique
+            // connexion automatique
             Auth::login($user);
 
             return redirect()->route('dashboard')->with('success', 'Bienvenue sur EmployeeFlow !');
