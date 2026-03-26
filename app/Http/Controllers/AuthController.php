@@ -10,15 +10,13 @@ class AuthController extends Controller
 {
     protected $authService;
 
-    // Injection du Service
+    // inject le service authentification
     public function __construct(AuthService $authService)
     {
         $this->authService = $authService;
     }
 
-    /**
-     * Traiter l'inscription (Register)
-     */
+    // inscription
     public function register(Request $request)
     {
         // 1. Validation stricte (Sécurité Backend)
@@ -30,10 +28,10 @@ class AuthController extends Controller
         ]);
 
         try {
-            // 2. Appel au service pour la création (Entreprise + User)
+            // creer entreprise avec user admin
             $user = $this->authService->register($data);
 
-            // 3. Connexion automatique
+            // Connexion automatique
             Auth::login($user);
 
             return redirect()->route('dashboard')->with('success', 'Bienvenue sur EmployeeFlow !');
@@ -43,9 +41,7 @@ class AuthController extends Controller
         }
     }
 
-    /**
-     * Traiter la connexion (Login)
-     */
+    //login
     public function login(Request $request)
     {
         $credentials = $request->validate([
@@ -64,9 +60,7 @@ class AuthController extends Controller
         ])->onlyInput('email');
     }
 
-    /**
-     * Déconnexion
-     */
+    // Déconnexion
     public function logout(Request $request)
     {
         Auth::logout();
