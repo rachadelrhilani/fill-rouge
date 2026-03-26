@@ -21,40 +21,40 @@
             </button>
         </div>
 
-        <form action="#" method="POST" class="space-y-4">
+        <form id="registerForm" action="#"  class="space-y-4">
             @csrf
 
             <div>
                 <label class="block text-xs font-semibold text-gray-700 mb-1 ml-1">Nom complet</label>
-                <input type="text" name="name" placeholder="John Doe"
-                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                <input type="text" id="name" name="name" placeholder="John Doe"
+                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none" required>
             </div>
 
             <div>
                 <label class="block text-xs font-semibold text-gray-700 mb-1 ml-1">Email Address</label>
-                <input type="email" name="email" placeholder="example@gmail.com"
-                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                <input type="email" id="email" name="email" placeholder="example@gmail.com"
+                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none" required>
             </div>
 
             <div>
                 <label class="block text-xs font-semibold text-gray-700 mb-1 ml-1">Nom d'entreprise</label>
-                <input type="text" name="company" placeholder="Nom de votre société"
-                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                <input type="text" id="company" name="company" placeholder="Nom de votre société"
+                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none" required>
             </div>
 
             <div>
                 <label class="block text-xs font-semibold text-gray-700 mb-1 ml-1">Password</label>
-                <input type="password" name="password" placeholder="********"
-                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                <input type="password" id="password" name="password" placeholder="********"
+                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none" required>
             </div>
             <div>
                 <label class="block text-xs font-semibold text-gray-700 mb-1 ml-1">Confirm</label>
-                <input type="password" name="password_confirmation" placeholder="********"
-                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none">
+                <input type="password" id="password_confirmation" name="password_confirmation" placeholder="********"
+                    class="w-full px-5 py-3 bg-[#f3f4f6] border-none rounded-2xl text-sm focus:ring-2 focus:ring-blue-500 transition outline-none" required>
             </div>
 
 
-            <button type="submit" class="w-full py-4 bg-[#6366f1] hover:bg-indigo-700 text-white rounded-2xl font-bold text-sm shadow-lg shadow-indigo-200 transition-all mt-6">
+            <button type="submit" id="submitBtn" class="w-full py-4 bg-[#6366f1] hover:bg-indigo-700 text-white rounded-2xl font-bold text-sm shadow-lg shadow-indigo-200 transition-all mt-6">
                 Create account
             </button>
 
