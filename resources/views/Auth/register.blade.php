@@ -10,16 +10,6 @@
             <h1 class="font-display text-2xl font-bold text-[#1e3a8a]">Sign Up</h1>
         </div>
 
-        <div class="flex gap-4 mb-8 font-display">
-            <button class="flex-1 flex items-center justify-center gap-2 py-2.5 border border-gray-100 rounded-xl bg-[#f8fafc] hover:bg-gray-50 transition">
-                <img src="https://www.svgrepo.com/show/475656/google.svg" class="w-5 h-5" alt="Google">
-                <span class="text-xs font-medium text-gray-600">Google</span>
-            </button>
-            <button class="flex-1 flex items-center justify-center gap-2 py-2.5 border border-gray-100 rounded-xl bg-[#f8fafc] hover:bg-gray-50 transition">
-                <img src="https://www.svgrepo.com/show/512317/github-142.svg" class="w-5 h-5" alt="Github">
-                <span class="text-xs font-medium text-gray-600">Github</span>
-            </button>
-        </div>
 
         <form id="registerForm" action="{{ route('register.post') }}" method="POST" class="space-y-4">
             @csrf

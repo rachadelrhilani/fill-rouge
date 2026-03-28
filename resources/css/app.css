@@ -13,10 +13,11 @@
 @tailwind utilities;
 
 @theme {
-
+  /* 2. Définition des polices personnalisées */
   --font-display: "Poppins", "sans-serif";
   --font-body: "Roboto", "sans-serif";
 
+  /* 3. On peut aussi ajouter tes couleurs pro ici */
   --color-primary-blue: #1E3A8A;
   --color-secondary-blue: #2563EB;
 }
