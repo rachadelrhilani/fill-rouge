@@ -2,7 +2,6 @@ export function initRegisterValidation() {
     const form = document.getElementById('registerForm');
     if (!form) return;
 
-    // "f" pour fields (champs)
     const f = {
         name: document.getElementById('name'),
         email: document.getElementById('email'),
@@ -13,7 +12,6 @@ export function initRegisterValidation() {
     };
 
     const validate = () => {
-        // "v" pour validité
         const vName = f.name.value.trim().length >= 3;
         
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -44,7 +42,7 @@ export function initRegisterValidation() {
         }
     };
 
-    // Écouteurs d'événements
+
     [f.name, f.email, f.comp, f.pass, f.conf].forEach(input => {
         if(input){
           input.addEventListener('input', validate);  

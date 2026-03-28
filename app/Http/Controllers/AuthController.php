@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     protected $authService;
 
-    // inject le service authentification
+    
     public function __construct(AuthService $authService)
     {
         $this->authService = $authService;
