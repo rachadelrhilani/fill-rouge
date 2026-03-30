@@ -18,6 +18,6 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 // Espace protégé (Dashboard)
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', function () {
-        return view('dashboard'); // Ta page interne
+        return view('admin.dashboard'); // Ta page interne
     })->name('dashboard');
 });
