@@ -34,7 +34,7 @@ class AuthController extends Controller
             // connexion automatique
             Auth::login($user);
 
-            return redirect()->route('dashboard')->with('success', 'Bienvenue sur EmployeeFlow !');
+            return redirect()->route('admin.dashboard')->with('success', 'Bienvenue sur EmployeeFlow !');
             
         } catch (\Exception $e) {
             return back()->withInput()->withErrors(['error' => 'Erreur lors de l\'inscription : ' . $e->getMessage()]);

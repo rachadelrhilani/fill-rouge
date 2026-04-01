@@ -7,54 +7,54 @@
 
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="bg-white p-6 rounded-[24px] shadow-sm flex flex-col gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
-                </svg>
-            </div>
-            <div>
-                <p class="text-sm font-medium text-gray-500">Total Collaborateurs</p>
-                <h3 class="text-3xl font-bold text-gray-800 font-display">124</h3>
-            </div>
+    <div class="bg-white p-6 rounded-[24px] shadow-sm flex flex-col gap-4">
+        <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
         </div>
-
-        <div class="bg-white p-6 rounded-[24px] shadow-sm flex flex-col gap-4">
-            <div class="w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                </svg>
-            </div>
-            <div>
-                <p class="text-sm font-medium text-gray-500">Taux d'occupation</p>
-                <h3 class="text-3xl font-bold text-gray-800 font-display">85%</h3>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-[24px] shadow-sm flex flex-col gap-4">
-            <div class="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center text-red-600">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            </div>
-            <div>
-                <p class="text-sm font-medium text-gray-500">Absences aujourd'hui</p>
-                <h3 class="text-3xl font-bold text-gray-800 font-display">3</h3>
-            </div>
-        </div>
-
-        <div class="bg-white p-6 rounded-[24px] shadow-sm flex flex-col gap-4">
-            <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-500">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-            </div>
-            <div>
-                <p class="text-sm font-medium text-gray-500">Heures prévues</p>
-                <h3 class="text-3xl font-bold text-gray-800 font-display">450h</h3>
-            </div>
+        <div>
+            <p class="text-sm font-medium text-gray-500">Total Collaborateurs</p>
+            <h3 id="stat-collab" class="text-3xl font-bold text-gray-800 font-display animate-pulse text-gray-300">---</h3>
         </div>
     </div>
+
+    <div class="bg-white p-6 rounded-[24px] shadow-sm flex flex-col gap-4">
+        <div class="w-10 h-10 rounded-lg bg-indigo-50 flex items-center justify-center text-indigo-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+            </svg>
+        </div>
+        <div>
+            <p class="text-sm font-medium text-gray-500">Taux d'occupation</p>
+            <h3 id="stat-occupation" class="text-3xl font-bold text-gray-800 font-display animate-pulse text-gray-300">---</h3>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-[24px] shadow-sm flex flex-col gap-4">
+        <div class="w-10 h-10 rounded-lg bg-red-50 flex items-center justify-center text-red-600">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </div>
+        <div>
+            <p class="text-sm font-medium text-gray-500">Absences aujourd'hui</p>
+            <h3 id="stat-absences" class="text-3xl font-bold text-gray-800 font-display animate-pulse text-gray-300">---</h3>
+        </div>
+    </div>
+
+    <div class="bg-white p-6 rounded-[24px] shadow-sm flex flex-col gap-4">
+        <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+        </div>
+        <div>
+            <p class="text-sm font-medium text-gray-500">Tâches à faire</p>
+            <h3 id="stat-taches" class="text-3xl font-bold text-gray-800 font-display animate-pulse text-gray-300">---</h3>
+        </div>
+    </div>
+</div>
 
     <div class="max-w-3xl mx-auto bg-white rounded-[32px] shadow-sm p-8 mt-12">
         <div class="flex justify-between items-center mb-8">
@@ -110,3 +110,41 @@
     </div>
 </div>
 @endsection
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        
+        async function refreshStats() {
+            try {
+                // 1. On récupère les données de ton controller
+                const response = await fetch("{{ route('admin.stats.data') }}");
+                const data = await response.json();
+
+                // 2. On crée un dictionnaire qui lie tes IDs HTML aux données JSON
+                const statsMap = {
+                    'stat-collab': data.total_collaborateurs,
+                    'stat-occupation': data.taux_occupation + '%',
+                    'stat-absences': data.absences_today,
+                    'stat-heures': data.taches_a_faire // ou data.heures_prevues
+                };
+
+                // 3. On met à jour chaque élément automatiquement
+                for (const [id, value] of Object.entries(statsMap)) {
+                    const element = document.getElementById(id);
+                    if (element) {
+                        element.classList.remove('animate-pulse'); // On arrête le clignotement
+                        element.innerText = value;
+                    }
+                }
+
+            } catch (error) {
+                console.error("Problème de connexion aux statistiques");
+            }
+        }
+
+        // Lancer au chargement de la page
+        refreshStats();
+
+        // Relancer toutes les 5 minutes
+        setInterval(refreshStats, 300000);
+    });
+</script>
