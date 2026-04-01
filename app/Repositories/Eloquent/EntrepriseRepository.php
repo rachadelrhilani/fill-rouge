@@ -1,8 +1,8 @@
 <?php
-namespace App\Repositories;
+namespace App\Repositories\Eloquent;
 
-use App\Interfaces\EntrepriseRepositoryInterface;
 use App\Models\Entreprise;
+use App\Repositories\Interfaces\EntrepriseRepositoryInterface;
 
 class EntrepriseRepository implements EntrepriseRepositoryInterface {
     public function create(array $data) {
