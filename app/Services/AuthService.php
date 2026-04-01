@@ -1,8 +1,8 @@
 <?php
 namespace App\Services;
 
-use App\Interfaces\UserRepositoryInterface;
-use App\Interfaces\EntrepriseRepositoryInterface;
+use App\Repositories\Interfaces\EntrepriseRepositoryInterface;
+use App\Repositories\Interfaces\UserRepositoryInterface;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 

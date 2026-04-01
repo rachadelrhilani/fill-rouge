@@ -2,10 +2,12 @@
 
 namespace App\Providers;
 
-use App\Interfaces\EntrepriseRepositoryInterface;
-use App\Interfaces\UserRepositoryInterface;
-use App\Repositories\EntrepriseRepository;
-use App\Repositories\UserRepository;
+use App\Repositories\Eloquent\DashboardRepository;
+use App\Repositories\Eloquent\EntrepriseRepository;
+use App\Repositories\Eloquent\UserRepository;
+use App\Repositories\Interfaces\DashboardRepositoryInterface;
+use App\Repositories\Interfaces\EntrepriseRepositoryInterface;
+use App\Repositories\Interfaces\UserRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -17,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->bind(UserRepositoryInterface::class, UserRepository::class);
         $this->app->bind(EntrepriseRepositoryInterface::class, EntrepriseRepository::class);
+        $this->app->bind(DashboardRepositoryInterface::class, DashboardRepository::class);
     }
 
     /**
