@@ -3,7 +3,7 @@
 @section('title', 'Inscription | EmployeeFlow')
 
 @section('content')
-<div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between min-h-[80vh] gap-12 font-body">
+<div class="max-w-6xl mx-auto mt-4 flex flex-col md:flex-row items-center justify-between min-h-[80vh] gap-12 font-body">
 
     <div class="w-full md:w-[450px] bg-white rounded-[40px] shadow-sm p-10">
         <div class="text-center mb-8">
