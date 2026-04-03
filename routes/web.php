@@ -21,7 +21,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::middleware('auth')->group(function () {
     Route::get('/admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
-    
+    Route::get('/admin/Configuration', function () { return view('admin.configuration'); })->name('admin.configuration');
     // La route qui renvoie les données JSON pour le JS
     Route::get('/admin/stats-data', [DashboardController::class, 'getStatsData'])->name('admin.stats.data');
 });

@@ -16,7 +16,6 @@ class DashboardService
     {
         $taskData = $this->repository->getTasksStats();
         
-        // Logique de calcul du taux d'occupation
         $total = $taskData['total'];
         $taux = ($total > 0) ? round(($taskData['en_cours'] / $total) * 100) : 0;
 
